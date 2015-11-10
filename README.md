@@ -1,4 +1,4 @@
-# Machine Learning Course Coding Exercise
+# Machine Learning Course Coding Exercises
 
 Codes for the programming exercises in the Stanford University [Machine Learning](https://www.coursera.org/course/ml) class on [Coursera](https://www.coursera.org/).
 
