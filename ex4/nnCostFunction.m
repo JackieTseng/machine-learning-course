@@ -73,7 +73,7 @@ cost = -yVec .* log(h) - (1 - yVec) .* log(1 - h);
 % Without regularization
 J = 1 / m * sum(sum(cost));
 
-% Add regularization
+% Add regularization [Cost Function]
 Theta1WithoutBias = Theta1(:, 2:end);
 Theta2WithoutBias = Theta2(:, 2:end);
 J = J + lambda / ( 2 * m) * (sum(sum(Theta1WithoutBias .^ 2)) + ...
@@ -99,6 +99,11 @@ for i = 1:m,
     delta2 = delta2 + D3 * a2Temp';
 end;
 
+% Without regularization version
+%Theta1_grad = (1 / m) * delta1;
+%Theta2_grad = (1 / m) * delta2;
+
+% Add regularization [Gradient]
 Theta1_grad = (1 / m) * delta1 + lambda / m * ...
     [ zeros(size(Theta1, 1), 1) Theta1WithoutBias ];
 Theta2_grad = (1 / m) * delta2 + lambda / m * ...
