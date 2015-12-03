@@ -8,6 +8,6 @@ Codes for the programming exercises in the Stanford University [Machine Learning
 
 ## About
 
-* [Github Repository](https://github.com/JackieTseng/machine-learning-course)
+* [Github Repository](https://github.com/JackieTseng/paper-notes)
 * Author : Zhuobin Zheng(Jackie Tseng)
 * Nov. 2015
